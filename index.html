@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Generate Mailers</title>
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <button>
+            <i class="ph ph-info"></i>
+        </button>
+    </div>
+    
+    <div class="main-container" id="root">
+        <div class="container option-wrap">
+            <fieldset id="radioGrp">
+                <legend>Select a platform:</legend>
+
+                <div>
+                    <input type="radio" id="mergeTag" name="drone" value="mergeTag" />
+                    <label for="mergeTag">Merge Tag</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="normal" name="drone" value="normal" />
+                    <label for="normal">Normal</label>
+                </div>
+
+            </fieldset>
+        </div>
+
+
+        <div class="container source-wrapper hide">
+            <div class="source-wrap mergeTag hide">
+                <div>
+                    <label> Merge Tag : Greet Message</label>
+                    <input type="text" placeholder="Type Mergetag Greet" id="mpGreet">
+    
+                </div>
+                <div>
+                    <label> Merge Tag : Archive </label>
+                    <input type="text" placeholder="Type Mergetag : Archive" id="mpArchive">
+    
+                </div>
+            </div>
+
+            <!-- <hr> -->
+
+            <div class="source-wrap normal hide">
+                <div>
+                    <label> Normal : Greet Message</label>
+                    <input type="text" placeholder="Type Normal Greet" id="ntGreet">
+    
+                </div>  
+    
+                <div>
+                    <label> Normal : Server URL</label>
+                    <input type="text" placeholder="Type Archive Server URL" id="serverLink">    
+                </div>
+            </div>
+
+            <button class="button nextBtn"> Add Info</button>
+        </div>
+
+        <div class="container hide" id="data">
+            <div class="uploader-wrap">
+                <div>
+                    <label for="json-drop" class="custom-file-upload">
+                        .json data
+                    </label>
+                    <input id="json-drop" type="file" />
+                </div>
+                
+                <div>
+                    <label for="html-drop" class="custom-file-upload">
+                        .html template
+                    </label>
+                    <input id="html-drop" type="file" />
+                </div>
+            </div>
+            <button class="button nextBtn"> Add Data</button>
+
+        </div>
+        <div class="container hide" id="main">
+            <div>
+                <select name="template" id="selectEvent" disabled>
+                    <option value="null">Select Event</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="diffLink"> Dynamic Link</label>
+                <input type="checkbox" id="diffLink" checked>
+            </div>
+
+            <button class="button" id="btnGen">Generate Files</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.1/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

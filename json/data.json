@@ -1,0 +1,125 @@
+{
+  "VIRTUALCONF": {
+    "baseURL": "https://virtualconf2025.com/",
+    "eventTitle": "Virtual Conference 2025",
+    "cities": {
+      "OnlineGlobal": {
+        "VenueDate": "Saturday, 15th March",
+        "VenueTime": "9:00 am to 6:00 pm (IST)",
+        "VenueAdd": "Online - Global Access via Zoom / Webex",
+        "VenueCity": "Virtual"
+      },
+      "NewYork": {
+        "VenueDate": "Monday, 17th March",
+        "VenueTime": "10:00 am to 5:00 pm (EST)",
+        "VenueAdd": "Hybrid Event - Times Center, Manhattan, New York + Virtual Stream",
+        "VenueCity": "New York"
+      },
+      "London": {
+        "VenueDate": "Wednesday, 19th March",
+        "VenueTime": "10:00 am to 4:00 pm (GMT)",
+        "VenueAdd": "Online with local meetup at The Shard, London",
+        "VenueCity": "London"
+      },
+      "Dubai": {
+        "VenueDate": "Saturday, 22nd March",
+        "VenueTime": "11:00 am to 5:00 pm (GST)",
+        "VenueAdd": "Virtual + Live Studio: Dubai World Trade Centre, Sheikh Zayed Rd, Dubai",
+        "VenueCity": "Dubai"
+      },
+      "Sydney": {
+        "VenueDate": "Tuesday, 25th March",
+        "VenueTime": "9:30 am to 3:30 pm (AEST)",
+        "VenueAdd": "Online & Sydney Convention Centre, Darling Harbour",
+        "VenueCity": "Sydney"
+      }
+    },
+    "googleMsg": "Virtual Conference 2025 - Connect, Collaborate, Create"
+  },
+
+  "JUMPSTREET": {
+    "baseURL": "https://jumpstreetevents.com/",
+    "eventTitle": "JumpStreet Movie Nights",
+    "cities": {
+      "LosAngeles": {
+        "VenueDate": "Friday, 14th February",
+        "VenueTime": "7:00 pm to 11:00 pm",
+        "VenueAdd": "Grauman’s Chinese Theatre, Hollywood Blvd, Los Angeles",
+        "VenueCity": "Los Angeles"
+      },
+      "Chicago": {
+        "VenueDate": "Saturday, 22nd February",
+        "VenueTime": "6:30 pm to 10:30 pm",
+        "VenueAdd": "Music Box Theatre, N Southport Ave, Chicago",
+        "VenueCity": "Chicago"
+      },
+      "NewYork": {
+        "VenueDate": "Friday, 28th February",
+        "VenueTime": "7:00 pm to 11:00 pm",
+        "VenueAdd": "AMC Empire 25, 234 W 42nd St, Times Square, New York",
+        "VenueCity": "New York"
+      },
+      "Miami": {
+        "VenueDate": "Saturday, 1st March",
+        "VenueTime": "8:00 pm to 12:00 am",
+        "VenueAdd": "Cinépolis Coconut Grove, Miami",
+        "VenueCity": "Miami"
+      },
+      "SanFrancisco": {
+        "VenueDate": "Friday, 7th March",
+        "VenueTime": "7:00 pm to 11:00 pm",
+        "VenueAdd": "Roxie Theater, 3117 16th St, San Francisco",
+        "VenueCity": "San Francisco"
+      }
+    },
+    "googleMsg": "JumpStreet Movie Nights - Watch, Laugh & Relive the Action!"
+  },
+
+  "GLOBALEXPO": {
+    "baseURL": "https://globalstartupexpo.com/",
+    "eventTitle": "Global Startup Expo 2025",
+    "cities": {
+      "SanFrancisco": {
+        "VenueDate": "Thursday, 10th April",
+        "VenueTime": "9:00 am to 6:00 pm",
+        "VenueAdd": "Moscone Center, Howard St, San Francisco",
+        "Countries": ["USA", "Canada"],
+        "Misc": ["India", "UK", "Germany", "Japan"],
+        "VenueCity": "San Francisco"
+      },
+      "Berlin": {
+        "VenueDate": "Monday, 14th April",
+        "VenueTime": "10:00 am to 5:00 pm",
+        "VenueAdd": "Berlin Congress Center, Alexanderstraße 11, Berlin",
+        "Countries": ["Germany", "France"],
+        "Misc": ["Sweden", "Denmark", "Spain", "Italy"],
+        "VenueCity": "Berlin"
+      },
+      "Singapore": {
+        "VenueDate": "Friday, 18th April",
+        "VenueTime": "10:30 am to 6:00 pm",
+        "VenueAdd": "Suntec Singapore Convention Centre, Temasek Blvd, Singapore",
+        "Countries": ["Singapore", "Malaysia"],
+        "Misc": ["China", "Korea", "India", "Japan"],
+        "VenueCity": "Singapore"
+      },
+      "Mumbai": {
+        "VenueDate": "Tuesday, 22nd April",
+        "VenueTime": "9:30 am to 5:30 pm",
+        "VenueAdd": "Jio World Convention Centre, Bandra Kurla Complex, Mumbai",
+        "Countries": ["India", "UAE"],
+        "Misc": ["UK", "USA", "Germany", "Australia"],
+        "VenueCity": "Mumbai"
+      },
+      "Toronto": {
+        "VenueDate": "Monday, 28th April",
+        "VenueTime": "10:00 am to 5:00 pm",
+        "VenueAdd": "Metro Toronto Convention Centre, Front St W, Toronto",
+        "Countries": ["Canada", "USA"],
+        "Misc": ["UK", "Australia", "France", "Switzerland"],
+        "VenueCity": "Toronto"
+      }
+    },
+    "googleMsg": "Global Startup Expo 2025 - Innovate, Pitch & Grow Worldwide"
+  }
+}
