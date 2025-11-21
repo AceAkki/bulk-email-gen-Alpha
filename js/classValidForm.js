@@ -1,4 +1,6 @@
 export class ValidFormMain {
+          errClass = "error-field"
+    errMsgSelector = ".error-msg"
         // function to track checkbox event 
     checkBoxEvent (checkBox) {
         checkBox.addEventListener("click", ()=> {
@@ -141,4 +143,5 @@ export class ValidFormMain {
       }
 
     }
+
 }
