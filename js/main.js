@@ -174,29 +174,113 @@ function createPopup() {
   popup.classList.add(popupClass);
   document.body.appendChild(popup);
   popup.innerHTML = `
-  <div class="popup-wrap">
-  <h2> Bulk Mailer Generator </h2>
+ <div class="popup-wrap">
+    <h2>Bulk Mailer Generator</h2>
 
-  <h5> Instructions:</h5>
+    <p>
+        Follow these steps to generate mailers for multiple cities or events using your HTML template and JSON data.
+    </p>
 
-      <p>
-          Two types of mailers can be generated from this
-          <ol> 
-              <li> 
-                  Merge Tag based
-              </li>
-              <li>
-                  Normal
-              </li>
-          </ol>
-      </p>
+    <h5>Instructions:</h5>
 
-      <ul>
-          <li>
-          "/fileName-Normal.html" this will be included in the serverlink 
-          </li>
-      </ul>
-  </div>
+    <hr>
+
+    <h3>1️⃣ Select Platform Type</h3>
+    <p>Choose the mode depending on how your mailers should be generated:</p>
+
+    <h4>✔ Merge Tag Mode</h4>
+    <ul>
+        <li>Enter <strong>Greet Message Merge Tag</strong></li>
+        <li>Enter <strong>Archive Merge Tag</strong></li>
+    </ul>
+
+    <h4>✔ Normal Mode</h4>
+    <ul>
+        <li>Enter <strong>Normal Greet Message</strong></li>
+        <li>Enter <strong>Server URL</strong> (used to build archive links)</li>
+         <li><strong>Important:</strong> The Server URL must be a proper base link.<br>
+            Example: <code>https://example.com/archive</code><br>
+            The generator will append <code>/fileName-Normal.html</code> to this base link.
+        </li>
+    </ul>
+
+    <p>Click <strong>Add Info</strong> to proceed.</p>
+
+    <hr>
+
+    <h3>2️⃣ Upload Required Files</h3>
+    <p>You must upload both files for the generator to work:</p>
+
+    <h4>📄 JSON Data File</h4>
+    <ul>
+        <li>Contains all event/city information.</li>
+        <li>Must follow the fixed JSON structure.</li>
+        <li>A sample JSON is available for download.</li>
+    </ul>
+
+    <h4>📄 HTML Template</h4>
+    <ul>
+        <li>The mailer layout used for generating outputs.</li>
+        <li>Dynamic elements must include specific class names so the script can insert data.</li>
+        <li>Sample HTML template is available for download.</li>
+        <li>Common class names include:
+            <ul>
+                <li>.cityName</li>
+                <li>.eventDate</li>
+                <li>.bannerImage</li>
+                <li>.ctaLink</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>Click <strong>Add Data</strong> after uploading.</p>
+
+    <hr>
+
+    <h3>3️⃣ Select the Event</h3>
+    <p>After the JSON file loads successfully:</p>
+    <ul>
+        <li>The dropdown will display all events or cities found in the JSON.</li>
+        <li>Select an event to preview or generate mailers.</li>
+    </ul>
+
+    <hr>
+
+    <h3>4️⃣ Dynamic Link Option</h3>
+    <p>You can control how links are generated:</p>
+    <ul>
+        <li><strong>Checked:</strong> Uses dynamic link from JSON.</li>
+        <li><strong>Unchecked:</strong> Uses static link from the HTML template.</li>
+    </ul>
+
+    <hr>
+
+    <h3>5️⃣ Generate Files</h3>
+    <p>Click <strong>Generate Files</strong> to create:</p>
+    <ul>
+        <li>Individual mailers for each event/city</li>
+        <li>Dynamic fields replaced based on JSON data</li>
+        <li>HTML files ready for upload or sending</li>
+    </ul>
+
+    <hr>
+
+    <h3>📌 Important Notes</h3>
+    <ul>
+        <li>The JSON structure must remain unchanged.</li>
+        <li>Every JSON field must match a class name in the HTML template.</li>
+        <li>Ensure all image URLs and CTA links in the JSON are correct.</li>
+        <li>Merge Tag mode inserts merge tags instead of static values.</li>
+    </ul>
+
+    <hr>
+
+    <h3>💡 Tip</h3>
+    <p>
+        Download the sample JSON & HTML template to understand the required formatting of data, class names, and dynamic fields.
+    </p>
+</div>
+
 
   `
   bgOverlay.addEventListener("click", ()=> {
